@@ -1,6 +1,6 @@
 # Full Stack Developer Portfolio Page
 
-> Click [here](https://benrgarcia.github.io/Portfolio-Page-v2/) to see the deployed site
+> Click [here](https://github.com/BenRGarcia/BenRGarcia.github.io/tree/source-code) to see the deployed site
 
 ## Portfolio Page Details
 
