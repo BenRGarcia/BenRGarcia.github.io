@@ -11,16 +11,6 @@ import 'bootstrap'
 // Global scss
 import './assets/scss/main.scss'
 
-// Initialize Bootstrap component JS when necessary
-// (uncomment popover/tooltip lines as needed)
-// eslint-disable-next-line
-$(function () {
-  // eslint-disable-next-line
-  // $('[data-toggle="popover"]').popover()
-  // eslint-disable-next-line
-  // $('[data-toggle="tooltip"]').tooltip()
-})
-
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
