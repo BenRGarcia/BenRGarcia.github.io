@@ -19,12 +19,17 @@
           <router-view/>
         </div>
       </main>
+      <!-- Social links (for smaller screens) -->
+      <footer class="container d-lg-none">
+        <Social/>
+      </footer>
     </div>
 </template>
 
 <script>
 import Navbar from './components/navigation/Navbar'
 import Sidebar from './components/navigation/Sidebar'
+import Social from './components/social/Social'
 
 export default {
   name: 'App',
@@ -62,7 +67,8 @@ export default {
   },
   components: {
     Navbar,
-    Sidebar
+    Sidebar,
+    Social
   }
 }
 </script>
