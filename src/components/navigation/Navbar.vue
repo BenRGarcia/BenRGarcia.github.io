@@ -27,8 +27,11 @@
       id="navbarTitle"
       :class="css.class.navbarTitle"
     >
-      Benjamin Garcia<br>
-      <span>Full Stack Developer</span>
+      {{ name }}
+      <br>
+      <span>
+        {{ title }}
+      </span>
     </router-link>
     <!-- Navbar dropdown wrapper -->
     <div
@@ -53,6 +56,8 @@ import NavbarLink from './NavbarLink'
 export default {
   data () {
     return {
+      name: 'Benjamin R Garcia',
+      title: 'Full Stack Web Developer',
       id: {
         dropdown: 'navbarNavDropdown'
       },
@@ -100,7 +105,6 @@ export default {
   text-decoration: none;
 }
 #toggle-button {
-  // border: 2px solid rgba(255,255,255,0.6);
   outline: 2px auto #fff;
 }
 #toggle-button:hover {
