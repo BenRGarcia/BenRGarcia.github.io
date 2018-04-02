@@ -19,10 +19,10 @@
         class="row"
       >
         <!-- Images of Tools -->
-        <Skills
-          v-for="(tool, id) in tools"
+        <Skill
+          v-for="(skill, id) in skills"
           :key="id"
-          :tool="tool"
+          :skill="skill"
         />
       </div>
     </div>
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import Skills from './Skills'
+import Skill from './Skill'
 
 export default {
   data () {
@@ -39,11 +39,11 @@ export default {
     }
   },
   components: {
-    Skills
+    Skill
   },
   computed: {
-    tools () {
-      return this.$store.getters['tools/getTools']
+    skills () {
+      return this.$store.getters['skills/getSkills']
     }
   }
 }

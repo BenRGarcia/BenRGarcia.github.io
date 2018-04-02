@@ -14,7 +14,7 @@
         <h5
           class="mb-0"
         >
-          {{ tool.name }}
+          {{ skill.name }}
         </h5>
       </div>
       <!-- Card Body -->
@@ -26,8 +26,8 @@
           class="text-center"
         >
           <img
-            :src="tool.src"
-            :alt="tool.name"
+            :src="skill.src"
+            :alt="skill.name"
             class="img-fluid mb-2"
           >
         </div>
@@ -39,7 +39,7 @@
 <script>
 export default {
   props: [
-    'tool'
+    'skill'
   ],
   data () {
     return {
