@@ -1,28 +1,12 @@
 <template>
   <div>
+    <!-- Portfolio Project Section -->
     <div
-      class="row"
+      class="container"
     >
-      <div class="col-12 px-0">
-        <div
-          :style="cssChildBanner"
-          :class="hideOnSmall"
-        >
-          <h1
-            class="mb-0"
-          >
-            Portfolio
-          </h1>
-        </div>
-      </div>
-    </div>
-      <!-- Portfolio Project Section -->
       <div
-        class="container"
+        class="row"
       >
-        <div
-          class="row"
-        >
         <!-- Projects Append Here -->
         <PortfolioProject
           v-for="(project, index) in projects"

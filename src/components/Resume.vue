@@ -1,22 +1,6 @@
 <template>
   <div>
     <div
-      class="row"
-    >
-      <div class="col-12 px-0">
-        <div
-          :style="cssChildBanner"
-          :class="hideOnSmall"
-        >
-          <h1
-            class="mb-0"
-          >
-            R&eacute;sum&eacute;
-          </h1>
-        </div>
-      </div>
-    </div>
-    <div
       id="img-wrapper"
       class="mx-auto"
     >

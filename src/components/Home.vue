@@ -2,18 +2,6 @@
   <div
     class="row"
   >
-  <div class="col-12 px-0">
-    <div
-      :style="cssChildBanner"
-      :class="hideOnSmall"
-    >
-      <h1
-        class="mb-0"
-      >
-        Home
-      </h1>
-    </div>
-  </div>
     <!-- Jumbotron -->
     <div
       class="col-12"
