@@ -1,12 +1,12 @@
 <template>
   <nav
-    :class="sidebarClasses"
+    :class="css.class.sidebar"
   >
     <!-- Logo -->
     <Logo/>
     <!-- Sidebar link list -->
     <ul
-      :class="ulClasses"
+      :class="css.class.links"
     >
       <!-- Sidebar links -->
       <SidebarLinks
@@ -25,20 +25,24 @@ import SidebarLinks from './SidebarLinks'
 export default {
   data () {
     return {
-      sidebarClasses: [
-        'bg-light',
-        'pl-0',
-        'pr-0',
-        'd-none',
-        'd-md-flex',
-        'flex-column'
-      ],
-      ulClasses: [
-        'nav',
-        'nav-pills',
-        'flex-column',
-        'flex-nowrap'
-      ]
+      css: {
+        class: {
+          sidebar: [
+            'bg-light',
+            'pl-0',
+            'pr-0',
+            'd-none',
+            'd-md-flex',
+            'flex-column'
+          ],
+          links: [
+            'nav',
+            'nav-pills',
+            'flex-column',
+            'flex-nowrap'
+          ]
+        }
+      }
     }
   },
   components: {
