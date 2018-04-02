@@ -6,6 +6,7 @@ import portfolio from './modules/portfolio'
 import tools from './modules/tools'
 import toggl from './modules/toggl'
 import resume from './modules/resume'
+import logo from './modules/logo'
 
 Vue.use(Vuex)
 
@@ -15,7 +16,8 @@ export const store = new Vuex.Store({
     portfolio,
     tools,
     toggl,
-    resume
+    resume,
+    logo
   },
   state: {},
   getters: {},
