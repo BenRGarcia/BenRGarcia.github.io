@@ -6,6 +6,7 @@ import portfolio from './modules/portfolio'
 import skills from './modules/skills'
 import resume from './modules/resume'
 import logo from './modules/logo'
+import social from './modules/social'
 
 Vue.use(Vuex)
 
@@ -15,7 +16,8 @@ export const store = new Vuex.Store({
     portfolio,
     skills,
     resume,
-    logo
+    logo,
+    social
   },
   state: {},
   getters: {},
