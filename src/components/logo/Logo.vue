@@ -5,34 +5,34 @@
   >
     <!-- Link wrapper for image -->
     <router-link
-      to="{ name: 'Home'}"
+      :to="routerLink"
     >
       <!-- Profile picture -->
       <img
-        :src="imgSrc"
-        :alt="imgAlt"
+        :src="logo.imgSrc"
+        :alt="logo.imgAlt"
         class="img-fluid rounded-circle profile-img"
       >
     </router-link>
     <!-- Name -->
     <h2
       class="h1 mb-2 mt-3"
-      v-html="name"
+      v-html="logo.name"
     >
     </h2>
     <!-- Sub-title -->
     <span
       class="h5 border-bottom"
     >
-      {{ title }}
+      {{ logo.title }}
     </span>
     <!-- Email address -->
     <small>
       <a
         id="email-link"
-        :href="mailto"
+        :href="logo.mailto"
       >
-        {{ emailAddr }}
+        {{ logo.emailAddr }}
       </a>
     </small>
   </div>
@@ -42,12 +42,14 @@
 export default {
   data () {
     return {
-      imgSrc: require('../../assets/images/profile.jpeg'),
-      imgAlt: 'Profile picture of Benjamin Garcia, Full Stack Web Developer',
-      name: 'Benjamin<br>Garcia',
-      title: 'Full Stack Developer',
-      emailAddr: 'ben@SeeBenProgram.com',
-      mailto: 'mailto:ben@SeeBenProgram.com?Subject=I%20want%20to%20hire%20you%21'
+      routerLink: {
+        name: 'Home'
+      }
+    }
+  },
+  computed: {
+    logo () {
+      return this.$store.getters['logo/getLogo']
     }
   }
 }
