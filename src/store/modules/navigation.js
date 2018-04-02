@@ -24,9 +24,15 @@ const state = {
       icon: 'email'
     },
     {
-      name: 'GitHub: /BenRGarcia',
+      name: 'GitHub',
       href: 'https://github.com/BenRGarcia',
       icon: 'code',
+      target: '_blank'
+    },
+    {
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/seebenprogram',
+      icon: 'person_outline',
       target: '_blank'
     }
   ]
