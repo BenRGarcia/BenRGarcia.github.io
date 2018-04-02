@@ -1,18 +1,17 @@
 <template>
-  <div>
-    <!-- Navbar (for smaller screen sizes)  -->
-    <div :class="navbarClasses">
-      <Navbar/>
-    </div>
     <div id="app">
-      <!-- Sidebar (for larger screen sizes) -->
-      <div :class="hideOnSmall">
-        <Sidebar :class="sidebarLayout"/>
+      <!-- Navbar (for smaller screen sizes)  -->
+      <div :class="css.class.navbar">
+        <Navbar/>
       </div>
-      <!-- Main Content -->
-      <main :class="mainLayout">
+      <!-- Sidebar (for larger screen sizes) -->
+      <div :class="css.class.hideOnSmall">
+        <Sidebar :class="css.class.sidebar"/>
+      </div>
+      <!-- Main content wrapper -->
+      <main :class="css.class.mainContent">
         <!-- Page banner (for larger screen sizes) -->
-        <div :class="hideOnSmall">
+        <div :class="css.class.hideOnSmall">
           <h1 id="page-banner" v-html="this.$route.name"><!-- Active Route --></h1>
         </div>
         <!-- Container for all router views -->
@@ -21,7 +20,6 @@
         </div>
       </main>
     </div>
-  </div>
 </template>
 
 <script>
@@ -32,28 +30,30 @@ export default {
   name: 'App',
   data () {
     return {
-      routeName: this.$route.name,
-      navbarClasses: [
-        'd-lg-none',
-        'bg-secondary',
-        'mb-3'
-      ],
-      hideOnSmall: [
-        'd-none',
-        'd-lg-block'
-      ],
-      sidebarLayout: [
-        'col-lg-3',
-        'col-xl-2'
-      ],
-      mainLayout: [
-        'col-12',
-        'col-lg-9',
-        'col-xl-10',
-        'ml-auto',
-        'pb-4',
-        'px-0'
-      ]
+      css: {
+        class: {
+          navbar: [
+            'd-lg-none',
+            'mb-3'
+          ],
+          hideOnSmall: [
+            'd-none',
+            'd-lg-block'
+          ],
+          sidebar: [
+            'col-lg-3',
+            'col-xl-2'
+          ],
+          mainContent: [
+            'col-12',
+            'col-lg-9',
+            'col-xl-10',
+            'ml-auto',
+            'pb-4',
+            'px-0'
+          ]
+        }
+      }
     }
   },
   components: {
@@ -64,6 +64,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.navbar {
+  background-color: #f00;
+}
 #page-banner {
   margin-bottom: 15px;
   padding: 30px;
