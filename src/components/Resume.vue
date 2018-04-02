@@ -5,13 +5,13 @@
       class="mx-auto"
     >
       <img
-        :src="imgSrc"
-        :alt="imgAlt"
+        :src="resume.imgSrc"
+        :alt="resume.imgAlt"
         class="img-fluid"
       >
       <a
-        :href="pdfFile"
-        :download="suggestedFileName"
+        :href="resume.pdfFile"
+        :download="resume.fileName"
       >
         <i
           class="material-icons"
@@ -25,16 +25,9 @@
 
 <script>
 export default {
-  props: [
-    'cssChildBanner',
-    'hideOnSmall'
-  ],
-  data () {
-    return {
-      imgSrc: require('../../static/documents/Resume.png'),
-      imgAlt: 'Image of Resume Text Document',
-      pdfFile: require('../../static/documents/Resume.pdf'),
-      suggestedFileName: 'Resume_Benjamin_R_Garcia.pdf'
+  computed: {
+    resume () {
+      return this.$store.getters['resume/getResume']
     }
   },
   mounted: function () {
