@@ -19,11 +19,6 @@ const state = {
     },
     /* External navigation links */
     {
-      name: 'Contact',
-      href: 'mailto:ben@SeeBenProgram.com?Subject=I%20want%20to%20hire%20you%21',
-      icon: 'email'
-    },
-    {
       name: 'GitHub',
       href: 'https://github.com/BenRGarcia',
       icon: 'code',
