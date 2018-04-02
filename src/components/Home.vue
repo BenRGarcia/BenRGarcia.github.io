@@ -40,8 +40,4 @@ export default {
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15),
               6px 8px 18px 0 rgba(0, 0, 0, 0.10);
 }
-#carouselExampleIndicators {
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.07),
-              3px 4px 9px 0 rgba(0, 0, 0, 0.25);
-}
 </style>
