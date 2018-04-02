@@ -1,8 +1,8 @@
 const state = {
   _resume: {
-    imgSrc: require('../../../static/documents/Resume.png'),
+    imgSrc: require('../../assets/resume/Resume.png'),
     imgAlt: 'Image of Resume Text Document',
-    pdfFile: require('../../../static/documents/Resume.pdf'),
+    pdfFile: require('../../assets/resume/Resume.pdf'),
     fileName: 'Resume_Benjamin_R_Garcia.pdf'
   }
 }
