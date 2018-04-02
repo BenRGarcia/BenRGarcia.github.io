@@ -32,18 +32,22 @@ export default {
     return {
       css: {
         class: {
+          /* Hide navbar on large screens */
           navbar: [
             'd-lg-none',
             'mb-3'
           ],
+          /* Hide sidebar & banner on small screens */
           hideOnSmall: [
             'd-none',
             'd-lg-block'
           ],
+          /* Grid layout for sidebar */
           sidebar: [
             'col-lg-3',
             'col-xl-2'
           ],
+          /* Grid layout for main content */
           mainContent: [
             'col-12',
             'col-lg-9',
