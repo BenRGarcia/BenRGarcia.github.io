@@ -1,25 +1,23 @@
 <template>
-  <div>
-    <div
-      id="img-wrapper"
-      class="mx-auto"
+  <div
+    id="img-wrapper"
+    class="mx-auto"
+  >
+    <img
+      :src="resume.imgSrc"
+      :alt="resume.imgAlt"
+      class="img-fluid"
     >
-      <img
-        :src="resume.imgSrc"
-        :alt="resume.imgAlt"
-        class="img-fluid"
+    <a
+      :href="resume.pdfFile"
+      :download="resume.fileName"
+    >
+      <i
+        class="material-icons"
       >
-      <a
-        :href="resume.pdfFile"
-        :download="resume.fileName"
-      >
-        <i
-          class="material-icons"
-        >
-          file_download
-        </i>
-      </a>
-    </div>
+        file_download
+      </i>
+    </a>
   </div>
 </template>
 
