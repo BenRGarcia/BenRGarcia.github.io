@@ -14,7 +14,7 @@ const state = {
     },
     {
       name: 'R&eacute;sum&eacute;',
-      routerLink: 'Resume',
+      routerLink: 'R&eacute;sum&eacute;',
       icon: 'insert_drive_file'
     },
     /* External navigation links */

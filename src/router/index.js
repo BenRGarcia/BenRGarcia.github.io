@@ -20,7 +20,7 @@ export default new Router({
     },
     {
       path: '/resume',
-      name: 'Resume',
+      name: 'R&eacute;sum&eacute;',
       component: Resume
     },
     {
