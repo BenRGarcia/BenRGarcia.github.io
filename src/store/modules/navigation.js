@@ -15,19 +15,21 @@ const state = {
     {
       name: 'R&eacute;sum&eacute;',
       routerLink: 'R&eacute;sum&eacute;',
-      icon: 'insert_drive_file'
+      icon: 'picture_as_pdf'
     },
     /* External navigation links */
     {
       name: 'GitHub',
       href: 'https://github.com/BenRGarcia',
-      icon: 'code',
+      imgSrc: require('../../assets/social/GitHub.png'),
+      imgAlt: 'GitHub logo',
       target: '_blank'
     },
     {
       name: 'LinkedIn',
       href: 'https://www.linkedin.com/in/seebenprogram',
-      icon: 'person_outline',
+      imgSrc: require('../../assets/social/LinkedIn.png'),
+      imgAlt: 'LinkedIn logo',
       target: '_blank'
     }
   ]
