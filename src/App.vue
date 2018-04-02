@@ -1,53 +1,25 @@
 <template>
   <div>
     <!-- Navbar (for smaller screen sizes)  -->
-    <div
-      :class="navbarClasses"
-    >
+    <div :class="navbarClasses">
       <Navbar/>
     </div>
-    <!-- 'Container' for entire page -->
-    <div
-      id="app"
-      class="container-fluid"
-    >
-      <!-- 'Row' for entire page -->
-      <div
-        class="row"
-      >
-        <!-- Sidebar (for larger screen sizes) -->
-        <div
-          :class="hideOnSmall"
-        >
-          <!-- Sidebar -->
-          <Sidebar
-            :class="sidebarLayout"
-          />
-        </div>
-        <!-- Main Content -->
-        <main
-          :class="mainLayout"
-        >
-          <!-- Page banner (for larger screen sizes) -->
-          <div
-            :class="hideOnSmall"
-          >
-            <!-- Page banner -->
-            <h1
-              id="page-banner"
-              v-html="this.$route.name"
-            >
-            </h1>
-          </div>
-          <!-- 'Container' for all router views -->
-          <div
-            class="container-fluid"
-          >
-            <!-- All pages go through router -->
-            <router-view/>
-          </div>
-        </main>
+    <div id="app">
+      <!-- Sidebar (for larger screen sizes) -->
+      <div :class="hideOnSmall">
+        <Sidebar :class="sidebarLayout"/>
       </div>
+      <!-- Main Content -->
+      <main :class="mainLayout">
+        <!-- Page banner (for larger screen sizes) -->
+        <div :class="hideOnSmall">
+          <h1 id="page-banner" v-html="this.$route.name"><!-- Active Route --></h1>
+        </div>
+        <!-- Container for all router views -->
+        <div class="container-fluid">
+          <router-view/>
+        </div>
+      </main>
     </div>
   </div>
 </template>
