@@ -5,7 +5,8 @@
   >
     <!-- Navbar toggle button -->
     <button
-      class="navbar-toggler"
+      id="toggle-button"
+      class="navbar-toggler ml-1"
       type="button"
       data-toggle="collapse"
       aria-expanded="false"
@@ -15,6 +16,7 @@
     >
       <!-- Navbar toggle icon -->
       <span
+        id="toggle-icon"
         :class="css.class.toggleIcon"
       >
       </span>
@@ -96,5 +98,15 @@ export default {
 }
 #navbarTitle:hover {
   text-decoration: none;
+}
+#toggle-button {
+  // border: 2px solid rgba(255,255,255,0.6);
+  outline: 2px auto #fff;
+}
+#toggle-button:hover {
+  background-color: rgba(255, 50, 50, 0.9);
+}
+#toggle-button:focus {
+  outline: 5px auto #fff;
 }
 </style>
