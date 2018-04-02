@@ -35,11 +35,20 @@
         :href="link.href"
         :target="link.target"
       >
+        <!-- If icon is used -->
         <i
+          v-if="link.icon"
           :class="css.class.icon"
         >
           {{ link.icon }}
         </i>
+        <!-- If img is used -->
+        <img
+          v-else
+          :src="link.imgSrc"
+          :alt="link.imgAlt"
+          class="img-fluid"
+        >
         <span
           :class="css.class.linkName"
           :href="link.href"
@@ -106,5 +115,8 @@ li:hover {
 .router-link-active {
   border-left: 3px solid red;
   background-color: #eee;
+}
+img {
+  height: 32px;
 }
 </style>
