@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- Navbar for smaller screen sizes  -->
+    <!-- Navbar (for smaller screen sizes)  -->
     <div
       :class="navbarClasses"
     >
@@ -15,10 +15,11 @@
       <div
         class="row"
       >
-        <!-- Sidebar for larger screen -->
+        <!-- Sidebar (for larger screen sizes) -->
         <div
-          :class="sidebarClasses"
+          :class="hideOnSmall"
         >
+          <!-- Sidebar -->
           <Sidebar
             :class="sidebarLayout"
           />
@@ -27,15 +28,23 @@
         <main
           :class="mainLayout"
         >
+          <!-- Page banner (for larger screen sizes) -->
+          <div
+            :class="hideOnSmall"
+          >
+            <!-- Page banner -->
+            <h1
+              id="page-banner"
+              v-html="this.$route.name"
+            >
+            </h1>
+          </div>
           <!-- 'Container' for all router views -->
           <div
             class="container-fluid"
           >
             <!-- All pages go through router -->
-            <router-view
-              :cssChildBanner="cssChildBanner"
-              :hideOnSmall="sidebarClasses"
-            />
+            <router-view/>
           </div>
         </main>
       </div>
@@ -51,12 +60,13 @@ export default {
   name: 'App',
   data () {
     return {
+      routeName: this.$route.name,
       navbarClasses: [
         'd-lg-none',
         'bg-secondary',
         'mb-3'
       ],
-      sidebarClasses: [
+      hideOnSmall: [
         'd-none',
         'd-lg-block'
       ],
@@ -71,15 +81,7 @@ export default {
         'ml-auto',
         'pb-4',
         'px-0'
-      ],
-      /* CSS passed down to child component page banners */
-      cssChildBanner: {
-        marginBottom: '15px',
-        padding: '30px',
-        backgroundColor: 'red',
-        color: 'white',
-        width: '100%'
-      }
+      ]
     }
   },
   components: {
@@ -89,6 +91,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+#page-banner {
+  margin-bottom: 15px;
+  padding: 30px;
+  background-color: #f00;
+  color: #fff;
+  width: 100%;
+}
 </style>
