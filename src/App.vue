@@ -58,7 +58,7 @@ export default {
             'col-lg-9',
             'col-xl-10',
             'ml-auto',
-            'pb-1',
+            'pb-3',
             'px-0'
           ]
         }
