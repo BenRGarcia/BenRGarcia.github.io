@@ -4,7 +4,11 @@
 
 <script>
 export default {
-  
+  computed: {
+    social () {
+      return this.$store.getters['social/getSocial']
+    }
+  }
 }
 </script>
 
