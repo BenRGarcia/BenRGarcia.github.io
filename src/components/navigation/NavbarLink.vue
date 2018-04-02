@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Only renders if an internal navigation link -->
     <li
       v-if="link.routerLink"
       class="nav-item pl-2"
