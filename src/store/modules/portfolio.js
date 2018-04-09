@@ -3,7 +3,7 @@ const state = {
     {
       name: 'My Portfolio Site',
       description: 'Made with Vue.js, Webpack, Vuex, Vue-Router, and Bootstrap v4',
-      src: require('../../assets/images/portfolio/vue.png'),
+      src: require('../../assets/images/portfolio/portfolio.png'),
       href: 'https://github.com/BenRGarcia/BenRGarcia.github.io/tree/source-code'
     },
     {
@@ -27,7 +27,7 @@ const state = {
     {
       name: 'Liri',
       description: 'A Node.js command line app that mimics Siri.',
-      src: require('../../assets/images/portfolio/vue.png'),
+      src: require('../../assets/images/portfolio/liri.png'),
       href: 'https://github.com/BenRGarcia/liri-node-app'
     }
   ]
