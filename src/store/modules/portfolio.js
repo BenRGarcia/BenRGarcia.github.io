@@ -15,7 +15,7 @@ const state = {
     {
       name: 'Tune Up',
       description: 'A car maintenance utility app that tracks and projects service intervals',
-      src: require('../../assets/images/portfolio/vue.png'),
+      src: require('../../assets/images/portfolio/tune-up.png'),
       href: 'https://github.com/BenRGarcia/Tune-Up'
     },
     {
