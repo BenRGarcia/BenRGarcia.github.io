@@ -4,7 +4,21 @@
 
 ## Build Tools
 
-* Created with Vue.js (CLI webpack template), Vuex, Vue-Router, Bootstrap v4
+Created with **Vue.js** (CLI webpack template), **Vuex**, **Vue-Router**, **Bootstrap v4**
+
+Deploy Script for GitHub Pages:
+
+```js
+// ~/package.json
+// ...
+  "scripts": {
+    // ...
+    "build": "node build/build.js",
+    "deploy": "rm -rf dist && npm run build && cd dist && git init && git add . && git commit -m \"Initial commit\" && git remote add origin git@github.com:BenRGarcia/BenRGarcia.github.io.git && git push --force origin master"
+    // (Mandatory file serving on Master branch for User Pages)
+  }
+// ...
+```
 
 ## Details
 
@@ -17,7 +31,7 @@
 Modularization for Vuex Store:
 
 ```js
-// /src/store/store.js
+// src/store/store.js
 export const store = new Vuex.Store({
   modules: {
     navigation,
@@ -85,4 +99,60 @@ export default new Router({
     }
   ]
 })
+```
+
+### CSS
+
+Bootstrap Grid:
+
+```js
+// src/App.vue
+data () {
+    return {
+      css: {
+        class: {
+          /* Hide navbar on large screens */
+          navbar: [
+            'd-lg-none',
+            'mb-3'
+          ],
+          /* Hide sidebar & banner on small screens */
+          hideOnSmall: [
+            'd-none',
+            'd-lg-block'
+          ],
+          /* Grid layout for sidebar */
+          sidebar: [
+            'col-lg-3',
+            'col-xl-2'
+          ],
+          /* Grid layout for main content */
+          mainContent: [
+            'col-12',
+            'col-lg-9',
+            'col-xl-10',
+            // ...
+```
+
+SCSS:
+
+```scss
+// src/assets/scss/_custom.scss
+/* Override Bootstrap v4's built-in custom variables here */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1350px
+);
+
+// src/assets/scss/main.scss
+// Import '_custom.scss' overrides of Bootstrap's default variables
+@import "custom";
+// Import  Bootstrap's scss
+@import "~bootstrap/scss/bootstrap";
+
+/* Global scss goes below */
+// ...
 ```
