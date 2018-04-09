@@ -1,6 +1,12 @@
 const state = {
   _projects: [
     {
+      name: 'My Portfolio Site',
+      description: 'Made with Vue.js, Webpack, Vuex, Vue-Router, and Bootstrap v4',
+      src: require('../../assets/images/portfolio/vue.png'),
+      href: 'https://github.com/BenRGarcia/BenRGarcia.github.io/tree/source-code'
+    },
+    {
       name: 'Multiplayer Trivia',
       description: 'A realtime group trivia game',
       src: require('../../assets/images/portfolio/vue.png'),
