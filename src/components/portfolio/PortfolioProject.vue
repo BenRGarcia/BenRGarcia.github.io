@@ -16,7 +16,7 @@
       </div>
       <!-- Card body -->
       <div
-        class="card-body pb-1 position-relative"
+        class="card-body pb-1 position-relative border-top"
       >
         <h5
           class="card-title"
