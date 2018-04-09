@@ -8,13 +8,13 @@ const state = {
     },
     {
       name: 'Multiplayer Trivia',
-      description: 'A realtime group trivia game',
-      src: require('../../assets/images/portfolio/vue.png'),
+      description: '*My Personal Favorite* A realtime group trivia game with in-game chat',
+      src: require('../../assets/images/portfolio/multiplayer-trivia.png'),
       href: 'https://github.com/BenRGarcia/Multiplayer-Trivia-v2'
     },
     {
       name: 'Tune Up',
-      description: 'A car maintenance utility app',
+      description: 'A car maintenance utility app that tracks and projects service intervals',
       src: require('../../assets/images/portfolio/vue.png'),
       href: 'https://github.com/BenRGarcia/Tune-Up'
     },
@@ -26,7 +26,7 @@ const state = {
     },
     {
       name: 'Liri',
-      description: 'A Node.js command line app that mimics Siri.',
+      description: 'A Node.js command line app that mimics Siri. Search OMDB, Spotify, and Twitter!',
       src: require('../../assets/images/portfolio/liri.png'),
       href: 'https://github.com/BenRGarcia/liri-node-app'
     }
