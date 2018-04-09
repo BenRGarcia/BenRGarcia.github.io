@@ -156,3 +156,21 @@ $grid-breakpoints: (
 /* Global scss goes below */
 // ...
 ```
+
+### Misc
+
+Additional webpack config to handle .pdf's:
+
+```js
+// ~/build/webpack.base.conf.js
+// ...
+{
+  test: /\.(pdf)(\?.*)?$/,
+  loader: 'url-loader',
+  options: {
+    limit: 10000,
+    name: utils.assetsPath('docs/[name].[hash:7].[ext]')
+  }
+}
+// ...
+```
