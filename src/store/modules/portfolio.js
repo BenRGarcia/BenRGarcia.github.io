@@ -29,6 +29,12 @@ const state = {
       description: 'A Node.js command line app that mimics Siri. Search OMDB, Spotify, and Twitter!',
       src: require('../../assets/images/portfolio/liri.png'),
       href: 'https://github.com/BenRGarcia/liri-node-app'
+    },
+    {
+      name: 'Gif-Tastic',
+      description: 'A superhero-themed gif search web app',
+      src: require('../../assets/images/portfolio/gif-tastic.png'),
+      href: 'https://github.com/BenRGarcia/Gif-Tastic-v2'
     }
   ]
 }
