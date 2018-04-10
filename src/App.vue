@@ -12,7 +12,9 @@
       <main :class="css.class.mainContent">
         <!-- Page banner (for larger screen sizes) -->
         <div :class="css.class.hideOnSmall">
-          <h1 id="page-banner" v-html="this.$route.name"><!-- Active Route --></h1>
+          <h1 id="page-banner" v-html="this.$route.name">
+            <!-- Active Route -->
+          </h1>
         </div>
         <!-- Container for all router views -->
         <div class="container-fluid">
@@ -78,7 +80,7 @@ export default {
   background-color: #f00;
 }
 #page-banner {
-  margin-bottom: 15px;
+  margin-bottom: 0;
   padding: 30px;
   background-color: #f00;
   color: #fff;
