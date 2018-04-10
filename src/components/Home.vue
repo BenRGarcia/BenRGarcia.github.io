@@ -4,7 +4,7 @@
   >
     <!-- Jumbotron -->
     <div
-      class="col-12"
+      class="col-12 px-0"
     >
       <Jumbotron/>
     </div>
