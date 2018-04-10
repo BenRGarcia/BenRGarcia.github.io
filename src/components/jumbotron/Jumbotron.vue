@@ -1,9 +1,9 @@
 <template>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-3" v-html="displayText"></h1>
+      <h1 class="display-3" v-html="displayTitle"></h1>
       <hr class="my-4">
-      <p class="lead">Looking for a Full-Stack JavaScript Ninja?</p>
+      <p class="lead">{{ displayText }}</p>
     </div>
   </div>
 </template>
@@ -12,7 +12,8 @@
 export default {
   data () {
     return {
-      displayText: 'Hi,<br>I\'m Ben'
+      displayTitle: 'Hi,<br>I\'m Ben',
+      displayText: 'I\'m a Full-Stack JavaScript Engineer'
     }
   }
 }
