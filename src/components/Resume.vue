@@ -1,7 +1,7 @@
 <template>
   <div
     id="img-wrapper"
-    class="mx-auto"
+    class="mx-auto mt-3"
   >
     <img
       :src="resume.imgSrc"
