@@ -15,7 +15,9 @@
         <h2 class="quote">
           {{ aboutText }}
         </h2>
-        <p class="h3 my-5" v-html="aboutParagraph">
+        <p class="h3 my-5" v-html="aboutParagraph1">
+        </p>
+        <p class="h3 my-5" v-html="aboutParagraph2">
         </p>
       </div>
     </div>
@@ -45,7 +47,8 @@ export default {
   data () {
     return {
       aboutText: 'Full-stack JavaScript engineer ready to grow, adapt, and collaborate to build unsurpassed client solutions.',
-      aboutParagraph: '<strong class="display-4">Testing...</strong>'
+      aboutParagraph1: '<strong class="display-4">I knew it was fate...</strong><br>That I\'d become a developer when, as an insurance processor, I wrote a command line program to calculate a benefit payment schedules just for fun. My superpower is an unstoppable drive to learn web technologies that will one day save the world.',
+      aboutParagraph2: '<strong class="display-4">test...</strong>'
     }
   },
   mounted: function () {
