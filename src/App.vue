@@ -41,8 +41,7 @@ export default {
         class: {
           /* Hide navbar on large screens */
           navbar: [
-            'd-lg-none',
-            'mb-3'
+            'd-lg-none'
           ],
           /* Hide sidebar & banner on small screens */
           hideOnSmall: [
