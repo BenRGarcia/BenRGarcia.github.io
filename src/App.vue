@@ -12,13 +12,15 @@
       <main :class="css.class.mainContent">
         <!-- Page banner (for larger screen sizes) -->
         <div :class="css.class.hideOnSmall">
-          <h1 id="page-banner" v-html="this.$route.name">
+          <h1 :style="css.style.banner" v-html="this.$route.name">
             <!-- Active Route -->
           </h1>
         </div>
         <!-- Container for all router views -->
         <div class="container-fluid">
-          <router-view/>
+          <router-view
+            :cssBanner="css.style.banner"
+          />
         </div>
       </main>
       <!-- Social links (for smaller screens) -->
@@ -62,6 +64,15 @@ export default {
             'pb-3',
             'px-0'
           ]
+        },
+        style: {
+          banner: {
+            marginBottom: 0,
+            padding: '30px',
+            backgroundColor: '#f00',
+            color: '#fff',
+            width: '100%'
+          }
         }
       }
     }
@@ -77,12 +88,5 @@ export default {
 <style lang="scss" scoped>
 .navbar {
   background-color: #f00;
-}
-#page-banner {
-  margin-bottom: 0;
-  padding: 30px;
-  background-color: #f00;
-  color: #fff;
-  width: 100%;
 }
 </style>
