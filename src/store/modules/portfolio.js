@@ -13,6 +13,12 @@ const state = {
       href: 'https://github.com/BenRGarcia/Multiplayer-Trivia-v2'
     },
     {
+      name: 'Foe Finder',
+      description: 'Complete the survey to discover the identity of your Arch Enemy!',
+      src: require('../../assets/images/portfolio/arch-enemy.jpg'),
+      href: 'https://github.com/BenRGarcia/Foe-Finder'
+    },
+    {
       name: 'Tune Up',
       description: 'A car maintenance utility app that tracks and projects service intervals',
       src: require('../../assets/images/portfolio/tune-up.png'),
