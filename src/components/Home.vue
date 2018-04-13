@@ -47,7 +47,7 @@ export default {
   data () {
     return {
       aboutText: 'Full-stack JavaScript engineer ready to grow, adapt, and collaborate to build unsurpassed client solutions.',
-      aboutParagraph1: '<strong class="display-4">I knew it was fate...</strong><br>That I\'d become a developer when, as an insurance processor, I wrote a command line program to calculate a benefit payment schedules just for fun. My superpower is an unstoppable drive to learn web technologies that will one day save the world.',
+      aboutParagraph1: '<strong class="display-4">I knew it was fate...</strong><br>That I\'d become a developer when, as an insurance processor, I wrote a command line program to calculate benefit payment schedules just for fun. My superpower is an unstoppable drive to learn web technologies that will one day save the world.',
       aboutParagraph2: '<strong class="display-4">test...</strong>'
     }
   },
