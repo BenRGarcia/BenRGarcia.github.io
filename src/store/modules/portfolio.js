@@ -13,6 +13,12 @@ const state = {
       href: 'https://github.com/BenRGarcia/Multiplayer-Trivia-v2'
     },
     {
+      name: 'Burgers',
+      description: 'Full stack Node, Express, Handlebars app where you can eat burgers!',
+      src: require('../../assets/images/portfolio/burgers.png'),
+      href: 'https://github.com/BenRGarcia/burger'
+    },
+    {
       name: 'Foe Finder',
       description: 'Complete the survey to discover the identity of your Arch Enemy!',
       src: require('../../assets/images/portfolio/arch-enemy.jpg'),
