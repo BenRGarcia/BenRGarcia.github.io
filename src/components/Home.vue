@@ -11,7 +11,10 @@
     <!-- About section -->
     <h1 :style="cssBanner">About</h1>
     <div class="col-12 mt-5">
-      <div class="container">
+      <div class="container py-5">
+        <div class="text-center mb-4">
+          <img :src="imgSrc" class="profile">
+        </div>
         <h2 class="quote">
           {{ aboutText }}
         </h2>
@@ -25,7 +28,7 @@
     <h1 :style="cssBanner">Skills</h1>
     <!-- Container for 'Skills' -->
     <div
-      class="container"
+      class="container py-5"
     >
       <SkillsCard/>
     </div>
@@ -47,8 +50,9 @@ export default {
   data () {
     return {
       aboutText: 'Full-stack JavaScript engineer ready to grow, adapt, and collaborate to build unsurpassed client solutions.',
-      aboutParagraph1: '<strong class="display-4">I knew it was fate...</strong><br>That I\'d become a developer when, as an insurance processor, I wrote a command line program to calculate benefit payment schedules just for fun. My superpower is an unstoppable drive to learn web technologies that will one day save the world.',
-      aboutParagraph2: '<strong class="display-4">test...</strong>'
+      aboutParagraph1: '<strong class="display-4">I knew it was fate...</strong><br>That I\'d become a developer when, as an insurance processor, I wrote a command line program to calculate benefit payment schedules just for fun. My superpower is an unstoppable drive to master web technologies that will one day save the world.',
+      aboutParagraph2: '<strong class="display-4">Passion...</strong><br>I have a passion for building full-stack, custom web applications. I believe that custom needs often demand custom solutions. I am committed to putting in the hard work it takes to plan, build, and deploy an application that exceeds client expectations.',
+      imgSrc: require('../assets/images/profile.jpeg')
     }
   },
   mounted: function () {
@@ -58,9 +62,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.profile {
+  border: 20px solid #f00;
+  border-radius: 50%;
+  max-width: 400px;
+}
 .quote {
   color: #383838;
-  border-left: 6px solid #383838;
+  border-left: 8px solid #383838;
   padding: 12px 0 12px 15px;
 }
 .card {
