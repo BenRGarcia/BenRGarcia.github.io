@@ -1,15 +1,14 @@
 <template>
-  <div class="row">
-    <div id="jumbotron-wrapper" class="col-12 px-0">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-1" v-html="displayTitle"></h1>
-          <h2 class="pt-1" v-html="displayText"></h2>
-          <hr>
-          <h2 v-html="quote"></h2>
+  <div class="row bg-texture vh relative">
+      <div class="col-12 bg-img px-0">
+        <div class="container-fluid ctr-children text-white pb-2">
+          <h1 class="display-1 mb-0" v-html="displayTitle"></h1>
+          <h2 v-html="displayText" class="z"></h2>
+          <span class="divider z"></span>
+          <h2 v-html="quote" class="z d-inline"></h2>
         </div>
       </div>
-    </div>
+    <img :src="logo" class="absolute-img">
   </div>
 </template>
 
@@ -17,30 +16,45 @@
 export default {
   data () {
     return {
-      displayTitle: 'Hi,<br>I\'m Ben',
+      displayTitle: 'Hi,<br>I\'m&nbsp;Ben',
       displayText: 'Full-Stack JavaScript&nbsp;Engineer',
       quote: 'Let\'s&nbsp;build&nbsp;something <em>incredible</em>&nbsp;together',
-      imgSrc: require('../../assets/images/biking.jpg'),
-      imgAlt: 'Biking on the Virginia Creeper Trail',
-      jumbotron: require('../../assets/images/background/dark_fish_skin.png')
+      logo: require('../../assets/images/collage.png'),
+      bg: require('../../assets/images/background/dark_fish_skin.png')
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-#jumbotron-wrapper {
-  background: url('../../assets/images/background/dark_fish_skin.png');
-  min-height: 94vh;
+.relative {
+  position: relative;
+}
+.absolute-img {
+  width: 75%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.25;
+}
+.z {
+  z-index: 1;
+}
+.divider {
+  border-top: 3px solid #fff;
+  max-width: 610px;
+  margin-bottom: 3px;
+}
+.bg-texture {
+  background-image: url('../../assets/images/background/dark_fish_skin.png');
+}
+.vh {
+  min-height: calc(100vh - 108px);
+}
+.ctr-children {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.jumbotron {
-  background: none;
-  color: #eee;
-}
-hr {
-  border-top: 3px solid #eee;
 }
 </style>
