@@ -1,9 +1,9 @@
 <template>
   <div class="row bg-texture vh relative">
       <div class="col-12 bg-img px-0">
-        <div class="container-fluid ctr-children text-white pb-2">
+        <div class="container ctr-children text-white pb-2">
           <h1 class="display-1 mb-0" v-html="displayTitle"></h1>
-          <h2 v-html="displayText" class="z"></h2>
+          <h2 v-html="displayText" class="z h1"></h2>
           <span class="divider z"></span>
           <h2 v-html="quote" class="z d-inline"></h2>
         </div>
@@ -18,7 +18,7 @@ export default {
     return {
       displayTitle: 'Hi,<br>I\'m&nbsp;Ben',
       displayText: 'Full-Stack JavaScript&nbsp;Engineer',
-      quote: 'Let\'s&nbsp;build&nbsp;something <em>incredible</em>&nbsp;together',
+      quote: 'Let\'s&nbsp;build something <em>incredible</em>&nbsp;together',
       logo: require('../../assets/images/collage.png'),
       bg: require('../../assets/images/background/dark_fish_skin.png')
     }
@@ -27,26 +27,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.display-1 {
+  font-weight: bold;
+}
 .relative {
   position: relative;
 }
 .absolute-img {
-  width: 75%;
+  min-height: 100%;
+  min-width: 100%;
   position: absolute;
   bottom: 0;
   right: 0;
-  opacity: 0.25;
+  opacity: 0.15;
+  z-index: -1;
 }
 .z {
   z-index: 1;
 }
 .divider {
   border-top: 3px solid #fff;
-  max-width: 610px;
+  max-width: 760px;
   margin-bottom: 3px;
 }
 .bg-texture {
   background-image: url('../../assets/images/background/dark_fish_skin.png');
+  z-index: -2;
 }
 .vh {
   min-height: calc(100vh - 108px);
