@@ -97,6 +97,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  z-index: 1;
+}
 #navbarTitle {
   color: #fff;
   font-size: 1.1rem;
