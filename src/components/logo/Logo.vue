@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 .profile-img {
-  border: 8px solid #f00;
+  border: 20px solid #f00;
 }
 small {
   font-size: 90%;
