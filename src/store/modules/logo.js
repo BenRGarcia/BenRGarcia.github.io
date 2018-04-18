@@ -1,6 +1,6 @@
 const state = {
   _logo: {
-    imgSrc: require('../../assets/images/profile.jpeg'),
+    imgSrc: require('../../assets/images/logo.png'),
     imgAlt: 'Profile picture of Benjamin Garcia, Full Stack Web Developer',
     name: 'Benjamin<br>Garcia',
     title: 'Full Stack Developer',
