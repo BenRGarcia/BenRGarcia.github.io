@@ -5,12 +5,23 @@ const state = {
       description: 'Made with Vue.js, Webpack, Vuex, Vue-Router, and Bootstrap v4',
       src: require('../../assets/images/portfolio/portfolio.png'),
       href: 'https://github.com/BenRGarcia/BenRGarcia.github.io/tree/source-code'
+    }, {
+      name: 'POMO',
+      description: 'A classroom tool for teachers! Assign tasks with times, students accumulate coins for swag!',
+      src: require('../../assets/images/portfolio/POMO.png'),
+      href: 'https://github.com/BenRGarcia/Pomo'
     },
     {
       name: 'Multiplayer Trivia',
       description: '*My Personal Favorite* A realtime group trivia game with in-game chat',
       src: require('../../assets/images/portfolio/multiplayer-trivia.png'),
       href: 'https://github.com/BenRGarcia/Multiplayer-Trivia-v2'
+    },
+    {
+      name: 'Burgers2',
+      description: 'Full stack Node, Express, Handlebars and Sequelize app where you can eat burgers!',
+      src: require('../../assets/images/portfolio/burgers2.png'),
+      href: 'https://github.com/BenRGarcia/burger2'
     },
     {
       name: 'Burgers',
