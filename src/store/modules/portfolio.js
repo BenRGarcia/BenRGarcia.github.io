@@ -12,6 +12,12 @@ const state = {
       href: 'https://github.com/BenRGarcia/Pomo'
     },
     {
+      name: 'News Scraper',
+      description: 'Scrape news articles and store in MongoDB',
+      src: require('../../assets/images/portfolio/news-scraper.png'),
+      href: 'https://github.com/BenRGarcia/news-scraper'
+    },
+    {
       name: 'Multiplayer Trivia',
       description: '*My Personal Favorite* A realtime group trivia game with in-game chat',
       src: require('../../assets/images/portfolio/multiplayer-trivia.png'),
