@@ -10,6 +10,11 @@ const state = {
       description: 'A classroom tool for teachers! Assign tasks with times, students accumulate coins for swag!',
       src: require('../../assets/images/portfolio/POMO.png'),
       href: 'https://github.com/BenRGarcia/Pomo'
+    }, {
+      name: 'Clickey Game',
+      description: 'Test your memory with this Pokemon themed React App! Click a picture -- but don\'t click the same picture twice!',
+      src: require('../../assets/images/portfolio/pokeball.png'),
+      href: 'https://github.com/BenRGarcia/clicky-game'
     },
     {
       name: 'News Scraper',
