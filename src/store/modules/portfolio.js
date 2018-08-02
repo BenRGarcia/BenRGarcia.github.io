@@ -9,7 +9,7 @@ const state = {
     {
       name: 'GitHubFolio',
       description: 'Generate a developer portfolio site in less than 30 seconds!',
-      src: require('../../assets/images/portfolio/tune-up.png'),
+      src: require('../../assets/images/portfolio/githubfolio.png'),
       href: 'https://github.com/BenRGarcia/GitHubFolio'
     },
     {
