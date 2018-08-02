@@ -24,13 +24,6 @@ const state = {
       imgSrc: require('../../assets/social/GitHub.png'),
       imgAlt: 'GitHub logo',
       target: '_blank'
-    },
-    {
-      name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/seebenprogram',
-      imgSrc: require('../../assets/social/LinkedIn.png'),
-      imgAlt: 'LinkedIn logo',
-      target: '_blank'
     }
   ]
 }
