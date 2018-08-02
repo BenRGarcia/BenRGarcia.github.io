@@ -5,7 +5,14 @@ const state = {
       description: 'Made with Vue.js, Webpack, Vuex, Vue-Router, and Bootstrap v4',
       src: require('../../assets/images/portfolio/portfolio.png'),
       href: 'https://github.com/BenRGarcia/BenRGarcia.github.io/tree/source-code'
-    }, {
+    },
+    {
+      name: 'GitHubFolio',
+      description: 'Generate a developer portfolio site in less than 30 seconds!',
+      src: require('../../assets/images/portfolio/tune-up.png'),
+      href: 'https://github.com/BenRGarcia/GitHubFolio'
+    },
+    {
       name: 'POMO',
       description: 'A classroom tool for teachers! Assign tasks with times, students accumulate coins for swag!',
       src: require('../../assets/images/portfolio/POMO.png'),
@@ -45,12 +52,6 @@ const state = {
       description: 'Complete the survey to discover the identity of your Arch Enemy!',
       src: require('../../assets/images/portfolio/arch-enemy.jpg'),
       href: 'https://github.com/BenRGarcia/Foe-Finder'
-    },
-    {
-      name: 'Tune Up',
-      description: 'A car maintenance utility app that tracks and projects service intervals',
-      src: require('../../assets/images/portfolio/tune-up.png'),
-      href: 'https://github.com/BenRGarcia/Tune-Up'
     },
     {
       name: 'Bamazon',
